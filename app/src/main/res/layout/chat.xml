@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/enviar_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/enviar_chat"
+        android:layout_toStartOf="@+id/enviar_chat" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/maricarmen_chat"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/entrada"
+        android:layout_alignStart="@+id/entrada"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="María del Carmen Garrido:\nHola, he visto tu trayecto y pasa cerca de\n mi casa, te he enviado una solicitud por si\n me puedo bajar contigo, ¿tienes plazas libres?"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/contestacion"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+
+</RelativeLayout>
